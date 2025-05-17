@@ -41,3 +41,37 @@ h1, h2, h3 {
 .sub-heading-color {
     color: var(--secondary-color);
 }
+
+/* Base styles for larger screens */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+/* Media query for screens 768px and below */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--navbar-color);
+    padding: 1rem;
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    left: 0;
+    width: 100%;
+  }
+
+
+  .navbar-toggler {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+}
