@@ -17,6 +17,22 @@ body {
   font-family: var(--primary-font);
 }
 
+.navbar {
+  background-color: #1a1a1a;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #BCEC7E;
+}
+
 
 
 h1,
