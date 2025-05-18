@@ -19,6 +19,15 @@ body {
     font-size: 1.2rem;
 }
 
+.logo {
+  transition: transform 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+
 .navbar {
     background-color: var(--navbar-color);
 }
