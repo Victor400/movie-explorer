@@ -62,6 +62,27 @@ p {
   display: none;
 }
 
+
+.about-header h2 {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-img img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 /* Media query for screens 768px and below */
 @media screen and (max-width: 768px) {
 
