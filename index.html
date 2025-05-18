@@ -75,10 +75,23 @@
       </div>
     </section>
 
-    <!-- Search Input Field -->
-    <div class="col-md-4">
-      <input type="text" id="searchInput" class="form-control" placeholder="Search for a movie..." />
-    </div>
+    <!-- Search and Filter Controls -->
+    <section id="controls" class="mb-4">
+      <div class="row g-2 align-items-center">
+        <div class="col-md-4">
+          <input type="text" id="searchInput" class="form-control" placeholder="Search for a movie..." />
+        </div>
+        <div class="col-md-3">
+          <select id="genreFilter" class="form-select">
+            <option value="all">All Genres</option>
+            <option value="action">Action</option>
+            <option value="drama">Drama</option>
+            <option value="comedy">Comedy</option>
+            <option value="Kids">Kids</option>
+          </select>
+        </div>
+
+    </section>
 
 
 
