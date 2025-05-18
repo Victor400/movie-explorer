@@ -74,12 +74,14 @@ p {
   font-size: 1.2rem;
   color: var(--secondary-color);
   max-width: 700px;
-  margin: 0 auto;
 }
+
+
 
 .about-img img {
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+   transform: translateY(40px); 
 }
 
 
