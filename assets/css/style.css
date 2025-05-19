@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
 
 :root {
-    --primary-font: 'Roboto', sans-serif;
-    --secondary-font: 'Lora', serif;
-    --primary-color: #BCEC7E;
-    --secondary-color: #EDFFDE;
-    --highlight-color: #8d411b;
-    --highlight-color-light: #dd7846;
-    --background-color: #121212;
-    --navbar-color: #1a1a1a;
-    --text-color: #ffffff;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Lora', serif;
+  --primary-color: #BCEC7E;
+  --secondary-color: #EDFFDE;
+  --highlight-color: #8d411b;
+  --highlight-color-light: #dd7846;
+  --background-color: #121212;
+  --navbar-color: #1a1a1a;
+  --text-color: #ffffff;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    font-family: var(--primary-font);
-    font-size: 1.2rem;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
 }
 
 .logo {
@@ -29,23 +29,25 @@ body {
 
 
 .navbar {
-    background-color: var(--navbar-color);
+  background-color: var(--navbar-color);
 }
 
 .navbar-brand img {
-    height: 40px;
+  height: 40px;
 }
 
 .nav-link {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .nav-link:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
-h1, h2, h3 {
-    font-family: var(--secondary-font);
+h1,
+h2,
+h3 {
+  font-family: var(--secondary-font);
 }
 
 h1 {
@@ -57,7 +59,7 @@ p {
 }
 
 .sub-heading-color {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 /* Base styles for larger screens */
@@ -85,32 +87,73 @@ p {
   max-width: 700px;
 }
 
-
-
 .about-img img {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-   transform: translateY(40px); 
+  transform: translateY(40px);
 }
+
+
+/* Container for the controls */
+#controls {
+  margin-bottom: 2rem;
+}
+
+/* Style for the search input */
+#searchInput {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the genre and sort dropdowns */
+#genreFilter,
+#sortOrder {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the clear button */
+#clearBtn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Hover effect for the clear button */
+#clearBtn:hover {
+  background-color: #e2e6ea;
+}
+
 
 
 /* Media query for screens 768px and below */
 @media screen and (max-width: 768px) {
 
- body {
-    font-size: 0.875rem; /* Approximately 14px */
+  body {
+    font-size: 0.875rem;
+    /* Approximately 14px */
   }
 
   h1 {
     font-size: 2rem;
   }
+
   .navbar-nav {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--navbar-color);
     padding: 1rem;
     position: absolute;
-    top: 60px; /* Adjust based on navbar height */
+    top: 60px;
+    /* Adjust based on navbar height */
     left: 0;
     width: 100%;
   }
@@ -128,8 +171,8 @@ p {
 
 /* Mobile screens (480px and below) */
 @media screen and (max-width: 480px) {
-   body {
-    font-size: 0.75rem; 
+  body {
+    font-size: 0.75rem;
   }
 
   h1 {
@@ -137,7 +180,3 @@ p {
   }
 
 }
-
-
-
-
