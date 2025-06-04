@@ -1,4 +1,4 @@
-//  Initialize sample movie data
+//  Initialize movie dataset
 const movies = [
     {
         title: "Captain America",

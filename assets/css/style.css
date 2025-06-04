@@ -6,7 +6,7 @@
   --primary-color: #BCEC7E;
   --secondary-color: #EDFFDE;
   --highlight-color: #8d411b;
-  --highlight-color-light: #dd7846;
+  --highlight-color-light: #64ad04;
   --background-color: #121212;
   --navbar-color: #1a1a1a;
   --text-color: #ffffff;
@@ -89,14 +89,24 @@ p {
 
 .about-img img {
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-top: auto;
+  margin-bottom: auto;
   transform: translateY(40px);
 }
 
 
 /* Container for the controls */
 #controls {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+  background-color: var(--highlight-color-light);
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the search input */

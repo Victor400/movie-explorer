@@ -9,9 +9,10 @@ Table of Contents
 2. [Key Features](#key-features)
 3. [Purpose](#purpose)
 4. [Goal](#goal)
-5. [Rationale](#rationale)
-6. [User Experience (UX Design)](#user-experience-ux-design)
-7. [Balsamiq-Wireframe](#balsamiq-wireframe)
+5. [Flow-Steps](#flow-steps)
+6. [Rationale](#rationale)
+7. [User Experience (UX Design)](#user-experience-ux-design)
+8. [Balsamiq-Wireframe](#balsamiq-wireframe)
 8. [Technologies Used](#technologies-used)
 9. [Project Setup](#project-setup)
 10. [Installation](#installation)
@@ -23,3 +24,34 @@ Table of Contents
 ## Overview
 
 The Interactive Movie Explorer is a responsive, user-friendly web application that allows users to browse, search, filter, and interact with a curated list of movies. Designed using HTML, CSS, and JavaScript, the site enables users to quickly find movies by title or genre, sort them by release year, and even subscribe to updates or contact the site owner through embedded forms.
+
+## Key Features 
+
+Search Functionality: Quickly find movies by typing keywords into the search bar.
+
+Genre Filtering: Narrow down movie selections by choosing specific genres like Action, Drama, Comedy, or Kids.
+
+Sorting Options: Sort movies by release year in ascending or descending order.
+
+Responsive Design: Optimized for various devices, ensuring a consistent experience across desktops, tablets, and mobile phones.
+
+Dynamic Rendering: Movie cards are dynamically generated based on user interactions, providing real-time feedback.
+
+## Flow Steps
+
+Description of Flow Steps:
+
+Load Homepage: The application initializes and displays the homepage with navigation and search/filter options.
+
+User Inputs Search Criteria: The user enters a movie title in the search bar, selects a genre from the dropdown menu, and chooses a sort order (e.g., by year ascending or descending).
+
+Application Processes Input: The application filters the movie dataset based on the search criteria and sorts the filtered list according to the selected order.
+
+Display Results: The application renders movie cards matching the criteria in the display section.
+
+User Selects a Movie: The user clicks on a movie card to view more details.
+
+Display Movie Details: The application shows detailed information about the selected movie, such as synopsis, cast, and reviews.
+
+User Action: The user may choose to rent the movie, add it to a watchlist, or return to the search results.
+
