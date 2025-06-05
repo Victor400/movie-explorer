@@ -41,17 +41,19 @@ Dynamic Rendering: Movie cards are dynamically generated based on user interacti
 
 Description of Flow Steps:
 
-Load Homepage: The application initializes and displays the homepage with navigation and search/filter options.
+- Load Homepage: The application initializes and displays the homepage with navigation and search/filter options.
 
-User Inputs Search Criteria: The user enters a movie title in the search bar, selects a genre from the dropdown menu, and chooses a sort order (e.g., by year ascending or descending).
+- User Inputs Search Criteria: The user enters a movie title in the search bar, selects a genre from the dropdown menu, and chooses a sort order (e.g., by year ascending or descending).
 
-Application Processes Input: The application filters the movie dataset based on the search criteria and sorts the filtered list according to the selected order.
+- Application Processes Input: The application filters the movie dataset based on the search criteria and sorts the filtered list according to the selected order.
 
-Display Results: The application renders movie cards matching the criteria in the display section.
+- Display Results: The application renders movie cards matching the criteria in the display section.
 
-User Selects a Movie: The user clicks on a movie card to view more details.
+- User Selects a Movie: The user clicks on a movie card to view more details.
 
-Display Movie Details: The application shows detailed information about the selected movie, such as synopsis, cast, and reviews.
+- Display Movie Details: The application shows detailed information about the selected movie, such as synopsis, cast, and reviews.
 
-User Action: The user may choose to rent the movie, add it to a watchlist, or return to the search results.
+Future Improvement 
+
+-  User Action: The user may choose to rent the movie, add it to a watchlist, or return to the search results.
 

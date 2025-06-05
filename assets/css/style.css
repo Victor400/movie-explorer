@@ -144,6 +144,25 @@ p {
 
 
 
+
+/* For tablets (widths between 768px and 1024px) */
+@media (max-width: 1024px) {
+  #controls {
+    max-width: 90%;
+  }
+
+  .about-img img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: auto;
+    margin-bottom: 20px;
+    transform: translateY(40px);
+  }
+}
+
+
+
+
 /* Media query for screens 768px and below */
 @media screen and (max-width: 768px) {
 
@@ -175,6 +194,19 @@ p {
     border: none;
     color: var(--primary-color);
     font-size: 1.5rem;
+  }
+
+  .about-img img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: auto;
+    margin-bottom: 20px;
+    transform: translateY(40px);
+  }
+
+  #controls {
+    max-width: 95%;
+    padding: 0.75rem;
   }
 }
 
