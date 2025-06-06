@@ -26,3 +26,18 @@ function renderMovies(data) {
     });
 }
 
+function filterAndSortMovies(movies) {
+    const search = searchInput.value.toLowerCase();
+    const genre = genreFilter.value;
+    const sort = sortOrder.value;
+
+    let filtered = movies.filter(m =>
+        (genre === "all" || m.genre.toLowerCase() === genre) &&
+        m.title.toLowerCase().includes(search)
+    );
+
+    if (sort === "asc") filtered.sort((a, b) => a.year - b.year);
+    else if (sort === "desc") filtered.sort((a, b) => b.year - a.year);
+
+    renderMovies(filtered);
+}
