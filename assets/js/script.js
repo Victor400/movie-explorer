@@ -5,6 +5,7 @@ const genreFilter = document.getElementById("genreFilter");
 const sortOrder = document.getElementById("sortOrder");
 const clearBtn = document.getElementById("clearBtn");
 
+// Function to render movie cards
 function renderMovies(data) {
     const container = document.getElementById("dataContainer");
     container.innerHTML = "";
@@ -26,6 +27,7 @@ function renderMovies(data) {
     });
 }
 
+// Function to filter and sort movies
 function filterAndSortMovies(movies) {
     const search = searchInput.value.toLowerCase();
     const genre = genreFilter.value;
@@ -40,4 +42,24 @@ function filterAndSortMovies(movies) {
     else if (sort === "desc") filtered.sort((a, b) => b.year - a.year);
 
     renderMovies(filtered);
+}
+
+
+let allMovies = [];
+
+async function fetchMoviesData() {
+    try {
+        const response = await fetch('js/movies.json');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const data = await response.json();
+
+        if (Array.isArray(data)) {
+            allMovies = data;
+            renderMovies(allMovies);
+        } else {
+            throw new Error('Invalid movie data format. Expected an array.');
+        }
+    } catch (error) {
+        console.error("Failed to load movie data:", error);
+    }
 }
