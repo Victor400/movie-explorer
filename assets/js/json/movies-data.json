@@ -1,4 +1,4 @@
-[
+ [
   {
     "title": "Captain America",
     "year": 2019,
@@ -30,10 +30,10 @@
     "image": "assets/images/minecraft.webp"
   },
   {
-     "title":"Tazan",
+     "title":"Tarzan",
      "year": 1994,
      "genre":"kids",
-     "image":"assets/images/tazan.webp"
+     "image":"assets/images/tarzan.webp"
   },
   {
     "title": "The Havoc",
@@ -66,10 +66,10 @@
     "image": "assets/images/thunderbolts.webp"
   },
   {
-    "title": "Sikander",
+    "title": "Sikandar",
     "year": 2024,
     "genre": "drama",
-    "image": "assets/images/sikander.webp"
+    "image": "assets/images/sikandar.webp"
   },
   {
     "title": "The Jewel Thief",
@@ -88,5 +88,12 @@
     "year": 2024,
     "genre": "kids",
     "image": "assets/images/fountain.webp"
+  },
+   {
+    "title": "Shadow Force",
+    "year": 2025,
+    "genre": "action",
+    "image": "assets/images/shadow-force.webp"
   }
 ]
+

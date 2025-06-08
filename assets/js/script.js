@@ -44,12 +44,12 @@ function filterAndSortMovies(movies) {
     renderMovies(filtered);
 }
 
-
+// Global movie data
 let allMovies = [];
 
 async function fetchMoviesData() {
     try {
-        const response = await fetch('js/movies.json');
+        const response = await fetch('assets/js/json/movies-data.json');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
 
@@ -63,3 +63,19 @@ async function fetchMoviesData() {
         console.error("Failed to load movie data:", error);
     }
 }
+
+// Setup event listeners
+searchInput.addEventListener("input", () => filterAndSortMovies(allMovies));
+genreFilter.addEventListener("change", () => filterAndSortMovies(allMovies));
+sortOrder.addEventListener("change", () => filterAndSortMovies(allMovies));
+clearBtn.addEventListener("click", () => {
+    searchInput.value = "";
+    genreFilter.value = "all";
+    sortOrder.value = "default";
+    renderMovies(allMovies);
+});
+
+
+
+// Initial data fetch
+fetchMoviesData();
