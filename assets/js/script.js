@@ -27,6 +27,7 @@ function renderMovies(data) {
     });
 }
 
+
 // Function to filter and sort movies
 function filterAndSortMovies(movies) {
     const search = searchInput.value.toLowerCase();

@@ -1,9 +1,29 @@
  [
+   {
+    "title": "Ballerina",
+    "year": 2025,
+    "genre": "action",
+    "image": "assets/images/ballerina.webp"
+    
+  },
+  {
+    "title": "The Avengers",
+    "year": 2025,
+    "genre": "action",
+    "image": "assets/images/avengers.webp"
+  },
+  {
+    "title": "The Accountant 2",
+    "year": 2025,
+    "genre": "action",
+    "image": "assets/images/the-accountant2.webp"
+  },
   {
     "title": "Captain America",
-    "year": 2019,
+    "year": 2024,
     "genre": "action",
     "image": "assets/images/captain-america.webp"
+    
   },
   {
     "title": "Exterritorial",
@@ -37,7 +57,7 @@
   },
   {
     "title": "The Legend",
-    "year": 1994,
+    "year": 2024,
     "genre": "comedy",
     "image": "assets/images/legend.webp"
   },
@@ -61,7 +81,7 @@
   },
   {
     "title": "Sikandar",
-    "year": 2024,
+    "year": 2025,
     "genre": "drama",
     "image": "assets/images/sikandar.webp"
   },
