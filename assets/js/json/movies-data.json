@@ -30,12 +30,6 @@
     "image": "assets/images/minecraft.webp"
   },
   {
-     "title":"Tarzan",
-     "year": 1994,
-     "genre":"kids",
-     "image":"assets/images/tarzan.webp"
-  },
-  {
     "title": "The Havoc",
     "year": 2024,
     "genre": "action",
