@@ -101,10 +101,10 @@ p {
 
 /* Container for the controls */
 #controls {
-  margin-bottom: 2.5rem;
-  margin-top: 3rem;
+  margin-bottom: 0.5rem !important;
+  margin-top: 4rem;
   background-color: var(--highlight-color-light);
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   padding: 0.5rem;
@@ -132,7 +132,7 @@ p {
 
 /* Style for the clear button */
 #clearBtn {
-  padding: 0.5rem 1rem;
+  padding: 1.2rem 1rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -271,6 +271,12 @@ p {
     width: 50%;
     font-size: 0.95rem;
   }
+
+  #clearBtn {
+    font-size: 0.95rem;
+    padding: 0.45rem 0.9rem;
+    width: 14.66% !important;
+  }
 }
 
 
@@ -288,6 +294,12 @@ p {
   #sortOrder {
     width: 95%;
     font-size: 0.9rem;
+  }
+
+  #clearBtn {
+    width: 96% !important;
+    font-size: 0.9rem;
+    padding: 0.6rem;
   }
 
 }
