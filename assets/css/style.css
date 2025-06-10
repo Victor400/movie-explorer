@@ -107,7 +107,7 @@ p {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.5rem;
+  padding: 1.5rem;
   box-sizing: border-box;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -197,6 +197,11 @@ p {
   color: #666;
   font-size: 0.9rem;
   margin-top: 0.25rem;
+}
+
+.movie-description {
+  font-size: 0.85rem;
+  color: #5b5b5b;
 }
 
 /* For tablets (widths between 768px and 1024px) */

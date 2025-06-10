@@ -5,6 +5,7 @@ const genreFilter = document.getElementById("genreFilter");
 const sortOrder = document.getElementById("sortOrder");
 const clearBtn = document.getElementById("clearBtn");
 
+
 // Function to render movie cards
 function renderMovies(data) {
     const container = document.getElementById("dataContainer");
@@ -19,13 +20,15 @@ function renderMovies(data) {
         const col = document.createElement("div");
         col.className = "col-md-3 movie-card";
         col.innerHTML = `
-      <img src="${movie.image}" alt="${movie.title}" class="img-fluid" />
-      <div class="movie-title">${movie.title}</div>
-      <div class="movie-details">${movie.genre.toUpperCase()} | ${movie.year}</div>
-    `;
+            <img src="${movie.image}" alt="${movie.title}" class="img-fluid movie-image" />
+            <div class="movie-title">${movie.title}</div>
+            <div class="movie-details">${movie.genre.toUpperCase()} | ${movie.year}</div>
+            <div class="movie-description">${movie.description || "No description available."}</div>
+        `;
         container.appendChild(col);
     });
 }
+
 
 
 // Function to filter and sort movies
@@ -64,6 +67,8 @@ async function fetchMoviesData() {
         console.error("Failed to load movie data:", error);
     }
 }
+
+
 
 // Setup event listeners
 searchInput.addEventListener("input", () => filterAndSortMovies(allMovies));
