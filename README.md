@@ -11,13 +11,14 @@ Table of Contents
 4. [Goal](#goal)
 5. [Flow-Steps](#flow-steps)
 6. [Rationale](#rationale)
-7. [User Experience (UX Design)](#user-experience-ux-design)
-8. [Balsamiq-Wireframe](#balsamiq-wireframe)
-8. [Technologies Used](#technologies-used)
-9. [Project Setup](#project-setup)
-10. [Installation](#installation)
-11. [Testing](#testing)
-12. [Acknowledgements](#acknowledgements)
+7. [Testing](#testing)
+8. [User Experience (UX Design)](#user-experience-ux-design)
+9. [Balsamiq-Wireframe](#balsamiq-wireframe)
+10. [Technologies Used](#technologies-used)
+11. [Project Setup](#project-setup)
+12. [Installation](#installation)
+13. [Testing](#testing)
+14. [Acknowledgements](#acknowledgements)
 
 
 
@@ -56,4 +57,20 @@ Description of Flow Steps:
 Future Improvement 
 
 -  User Action: The user may choose to rent the movie, add it to a watchlist, or return to the search results.
+
+
+
+## 🧪 Testing
+
+This project uses **Jest** for unit testing and **Cypress** for end-to-end testing.  
+All test-related files are organized under the `/tests` directory.
+
+### 🔧 Scripts
+
+ For full setup and usage details, see 📘 **Test Setup Guide**: [View TESTING.md](tests/setup/TESTING.md)
+
+```bash
+npm test           # Run Jest unit tests
+npm run test:watch # Watch mode for Jest
+npm run test:e2e   # Launch Cypress test runner
 
