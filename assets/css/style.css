@@ -204,6 +204,101 @@ p {
   color: #5b5b5b;
 }
 
+/* Subscribe Section */
+#subscribe {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+#subscribe .subscribe-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #BCEC7E;
+}
+
+#subscribe .subscribe-section p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+#subscribe .btn-warning {
+  background-color: var(--highlight-color-light);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#subscribe .btn-warning:hover {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modal-header {
+  background: #1f1c2c;
+  color: #fff;
+  border-bottom: none;
+}
+
+.modal-footer {
+  background: #f8f9fa;
+}
+
+.modal-body label {
+  font-weight: 600;
+}
+
+.modal-body input,
+.modal-body textarea {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Footer Info */
+footer h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Social Icons */
+footer a i {
+  transition: color 0.3s;
+}
+
+footer a:hover i {
+  color: var(--primary-color);
+
+}
+
+
 /* For tablets (widths between 768px and 1024px) */
 @media (max-width: 1024px) {
   #controls {
