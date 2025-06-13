@@ -14,6 +14,35 @@
 //// -- This is a parent command --
 
 
+Cypress.Commands.add('loadMovies', (type = 'all') => {
+    if (type === 'edge') {
+        return cy.fixture('movies.edge.fixture.json').then(
+            (data) => data,
+            (err) => {
+                Cypress.log({ name: 'loadMovies', message: 'Edge fixture not found, returning empty array' });
+                return [];
+            }
+        );
+    } else if (type === 'all') {
+        return cy.fixture('movies.fixture.json').then(
+            (data) => data,
+            (err) => {
+                Cypress.log({ name: 'loadMovies', message: 'Movies fixture not found, returning empty array' });
+                return [];
+            }
+        );
+    } else {
+        return cy.fixture('movies.fixture.json').then(
+            (movies) => movies.filter(movie => movie.genre.toLowerCase() === type.toLowerCase()),
+            (err) => {
+                Cypress.log({ name: 'loadMovies', message: 'Movies fixture not found, returning empty array' });
+                return [];
+            }
+        );
+    }
+});
+
+
 //
 //
 // -- This is a child command --
