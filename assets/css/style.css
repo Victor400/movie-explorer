@@ -298,6 +298,25 @@ footer a:hover i {
 
 }
 
+.return-home-btn {
+  background-color: var(--highlight-color-light);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.return-home-btn:hover {
+  background-color: var(--primary-color);
+  color: #000;
+  transform: translateY(-2px);
+}
+
+
 
 /* For tablets (widths between 768px and 1024px) */
 @media (max-width: 1024px) {
