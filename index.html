@@ -134,7 +134,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <form action="success-page.html" method="GET">
+                <form class="needs-validation" novalidate action="success-page.html" method="GET">
                   <div class="mb-3">
                     <label for="name" class="form-label">Full Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Jane Doe" required>
@@ -145,7 +145,8 @@
                   </div>
                   <div class="mb-3">
                     <label for="genre" class="form-label">Favorite Genre</label>
-                    <input type="text" class="form-control" id="genre" placeholder="e.g. Thriller, Comedy, Sci-Fi">
+                    <input type="text" class="form-control" id="genre" placeholder="e.g. Action, Comedy, Drama"
+                      required>
                   </div>
                   <div class="modal-footer d-flex justify-content-between">
                     <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -212,5 +213,23 @@
 
   </script>
 </body>
+
+<script>
+  // Bootstrap form validation
+  (() => {
+    'use strict';
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+</script>
+
 
 </html>
