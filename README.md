@@ -26,6 +26,12 @@ Table of Contents
 
 The Interactive Movie Explorer is a responsive, user-friendly web application that allows users to browse, search, filter, and interact with a curated list of movies. Designed using HTML, CSS, and JavaScript, the site enables users to quickly find movies by title or genre, sort them by release year, and even subscribe to updates or contact the site owner through embedded forms.
 
+# Project Link
+
+You can view the live project here: [Movie Explorer](https://victor400.github.io/movie-explorer/)
+
+![Website Morkup](assets/documentation/images/mockup.PNG)
+
 ## Key Features 
 
 Search Functionality: Quickly find movies by typing keywords into the search bar.
