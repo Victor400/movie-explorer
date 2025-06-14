@@ -1,4 +1,4 @@
-![movie-explorer-logo](assets/images/movie-explorer-logo.jpeg)
+![movie-explorer-logo](assets/documentation/images/movie-explorer-logo.jpeg)
 
 # Movie Explorer Website
 Welcome to Movie Explorer, your ultimate destination for discovering and exploring movies. Browse through a curated collection of films across genres like Action, Comedy, Drama, and Kids. Whether you're searching for a classic favorite or the latest hit, Movie Explorer helps you find movies you’ll love—fast and easily. Dive in, search, filter, and enjoy the world of cinema at your fingertips.
