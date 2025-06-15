@@ -5,10 +5,17 @@ const genreFilter = document.getElementById("genreFilter");
 const sortOrder = document.getElementById("sortOrder");
 const clearBtn = document.getElementById("clearBtn");
 
+console.log("DOM elements loaded:", {
+    container,
+    searchInput,
+    genreFilter,
+    sortOrder,
+    clearBtn
+});
 
 // Function to render movie cards
 function renderMovies(data) {
-    const container = document.getElementById("dataContainer");
+    console.log("Rendering movies:", data);
     container.innerHTML = "";
 
     if (data.length === 0) {
@@ -29,21 +36,25 @@ function renderMovies(data) {
     });
 }
 
-
-
 // Function to filter and sort movies
 function filterAndSortMovies(movies) {
     const search = searchInput.value.toLowerCase();
     const genre = genreFilter.value;
     const sort = sortOrder.value;
 
+    console.log("Filtering with:", { search, genre, sort });
+
     let filtered = movies.filter(m =>
         (genre === "all" || m.genre.toLowerCase() === genre) &&
         m.title.toLowerCase().includes(search)
     );
 
+    console.log("Filtered movies:", filtered);
+
     if (sort === "asc") filtered.sort((a, b) => a.year - b.year);
     else if (sort === "desc") filtered.sort((a, b) => b.year - a.year);
+
+    console.log("Sorted movies:", filtered);
 
     renderMovies(filtered);
 }
@@ -51,11 +62,16 @@ function filterAndSortMovies(movies) {
 // Global movie data
 let allMovies = [];
 
+// Fetch data
 async function fetchMoviesData() {
     try {
         const response = await fetch('assets/js/json/movies-data.json');
+        console.log("Fetch response:", response);
+
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
+
+        console.log("Fetched movie data:", data);
 
         if (Array.isArray(data)) {
             allMovies = data;
@@ -68,20 +84,29 @@ async function fetchMoviesData() {
     }
 }
 
+// Event listeners
+searchInput.addEventListener("input", () => {
+    console.log("Search input changed:", searchInput.value);
+    filterAndSortMovies(allMovies);
+});
 
+genreFilter.addEventListener("change", () => {
+    console.log("Genre changed:", genreFilter.value);
+    filterAndSortMovies(allMovies);
+});
 
-// Setup event listeners
-searchInput.addEventListener("input", () => filterAndSortMovies(allMovies));
-genreFilter.addEventListener("change", () => filterAndSortMovies(allMovies));
-sortOrder.addEventListener("change", () => filterAndSortMovies(allMovies));
+sortOrder.addEventListener("change", () => {
+    console.log("Sort order changed:", sortOrder.value);
+    filterAndSortMovies(allMovies);
+});
+
 clearBtn.addEventListener("click", () => {
+    console.log("Clear button clicked.");
     searchInput.value = "";
     genreFilter.value = "all";
     sortOrder.value = "default";
     renderMovies(allMovies);
 });
-
-
 
 // Initial data fetch
 fetchMoviesData();
