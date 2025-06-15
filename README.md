@@ -17,8 +17,7 @@ Table of Contents
 10. [Technologies Used](#technologies-used)
 11. [Project Setup](#project-setup)
 12. [Installation](#installation)
-13. [Testing](#testing)
-14. [Acknowledgements](#acknowledgements)
+13. [Acknowledgements](#acknowledgements)
 
 
 
@@ -327,3 +326,50 @@ HTML: Structure the page with header, main content, filter panel, and data area.
 CSS: Style for clean UI, responsiveness, and optional themes (dark/light mode).
 
 JavaScript: Handle interactivity, DOM manipulation, and data logic.
+
+## Project Setup
+Follow these steps to set up the project locally:
+
+1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/movie-explorer.git
+cd movie-explorer
+```
+
+2. Project Structure
+Ensure your folders are structured like this:
+
+```
+/assets
+  └── /js
+      └── main.js
+      └── json/
+          └── movies-data.json
+/index.html
+```
+This project runs with plain HTML, CSS, and JavaScript. No build tools are required.
+
+ ## Installation
+If your project includes testing tools (like Jest or Cypress), install dependencies:
+
+1. Install Node.js Dependencies (for testing)
+Make sure you have Node.js installed, then run:
+
+```
+npm install
+```
+
+2. Run Tests
+
+- Unit Tests (Jest)
+
+```bash
+npm test
+```
+
+- End-to-End Tests (Cypress)
+
+```bash
+npm run test:e2e
+```
