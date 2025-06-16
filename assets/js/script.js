@@ -1,3 +1,6 @@
+
+/* jshint esversion: 8 */
+
 // Cache DOM elements for interaction
 const container = document.getElementById("dataContainer");
 const searchInput = document.getElementById("searchInput");
