@@ -317,6 +317,21 @@ Submissions without a valid email are blocked with validation.
 | 8.3 | Invalid Email Validation | Enter “test@”, submit | Error shown, submission blocked | ✅ / ❌ |
 
 
+## Balsamiq Wireframe
+I used Balsamiq Wireframes to design and visualize the layout of the Movie Explorer application across multiple device types. The wireframes helped guide the responsive design for:
+
+- Desktop view 
+
+![Desktop](assets/documentation/images/desktop.PNG)
+
+- Tablet view
+
+![Tablet](assets/documentation/images/tablet.PNG)
+
+Mobile view
+
+These early-stage sketches served as a blueprint throughout development, ensuring a user-friendly and consistent interface across all screen sizes.
+
 ## Technologies Used 
 
 ### 🛠️ Tech Stack
@@ -373,3 +388,17 @@ npm test
 ```bash
 npm run test:e2e
 ```
+
+## Acknowledgements
+I would like to express my sincere gratitude to the following individuals and resources that contributed to the development of this project:
+
+Juliia Konovalova – For guidance, feedback, and continuous support throughout the project.
+
+The Movie Database (TMDb) – For inspiration and reference on organizing movie content.
+
+W3Schools, MDN Web Docs, and Stack Overflow – For helpful examples, documentation, and community advice while resolving technical challenges.
+
+ChatGPT (by OpenAI) – For assistance in code reviews, debugging, and writing support content like documentation 
+and test guides.
+
+freeCodeCamp – For offering structured learning paths and tutorials that strengthened my frontend and JavaScript skills.
