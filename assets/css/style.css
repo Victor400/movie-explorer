@@ -94,6 +94,7 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   margin-top: auto;
+  padding: 20px;
   margin-bottom: auto;
   transform: translateY(40px);
 }
@@ -163,7 +164,10 @@ p {
   overflow: hidden;
   transition: transform 0.4s ease;
   text-align: center;
-  padding: 1rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .movie-card:hover {
@@ -194,18 +198,22 @@ p {
 }
 
 .movie-details {
-  color: #666;
+  color: var(--primary-color);
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
 
 .movie-description {
   font-size: 0.85rem;
-  color: #5b5b5b;
+  color: #adb5bd;
+  min-height: 100px;
+
+
 }
 
 /* Subscribe Section */
 #subscribe {
+  min-height: 400px;
   background: #0a0a0a;
   color: #fff;
 }
@@ -326,10 +334,9 @@ footer a:hover i {
 
   .about-img img {
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin-top: auto;
-    margin-bottom: 20px;
-    transform: translateY(40px);
+    /* Rounded corners for the image */
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -369,13 +376,7 @@ footer a:hover i {
     font-size: 1.5rem;
   }
 
-  .about-img img {
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin-top: auto;
-    margin-bottom: 20px;
-    transform: translateY(40px);
-  }
+
 
   #controls {
     max-width: 95%;

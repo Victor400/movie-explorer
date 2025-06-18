@@ -316,6 +316,15 @@ Submissions without a valid email are blocked with validation.
 | 8.2 | Valid Email Submit | Enter valid email & submit | Confirmation shown, input clears | ✅ / ❌ |
 | 8.3 | Invalid Email Validation | Enter “test@”, submit | Error shown, submission blocked | ✅ / ❌ |
 
+# Automated Testing
+
+Automated Test Categories This project includes automated tests that focus on improving the quality and performance of the website. The tests are divided into four main categories:
+
+- Performance Tests "This section showcases the results of the performance tests that evaluate how quickly the website loads and how efficiently it performs under various conditions." Image Description: "Performance testing results chart showing load times, performance score, and areas for improvement."
+- Accessibility Tests "The accessibility tests ensure that the website is usable by everyone, including individuals with disabilities. This section highlights the website's accessibility score and key improvements." Image Description: "Accessibility test results displaying contrast ratios, alternative text, and keyboard navigability checks." 
+- Best practices tests ensure that the website follows modern web standards for security, code quality, and maintainability. This section showcases adherence to best practices." Image Description: "Results of the best practices test, including code quality scores, security vulnerabilities, and compliance with recommended standards."
+- SEO Tests "SEO (Search Engine Optimization) tests evaluate how well the website is optimized for search engines. This section highlights SEO improvements to increase visibility on search engines." Image Description: "SEO audit report showing key optimizations, such as meta tags, page titles, keyword usage, and mobile-friendliness."
+
 
 ## Balsamiq Wireframe
 I used Balsamiq Wireframes to design and visualize the layout of the Movie Explorer application across multiple device types. The wireframes helped guide the responsive design for:

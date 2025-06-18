@@ -30,7 +30,7 @@ function renderMovies(data) {
         const col = document.createElement("div");
         col.className = "col-md-3 movie-card";
         col.innerHTML = `
-            <img src="${movie.image}" alt="${movie.title}" class="img-fluid movie-image" />
+            <img src="${movie.image}" alt="${movie.title}" class="img-fluid movie-image"width="600" height="400"loading="lazy" />
             <div class="movie-title">${movie.title}</div>
             <div class="movie-details">${movie.genre.toUpperCase()} | ${movie.year}</div>
             <div class="movie-description">${movie.description || "No description available."}</div>
