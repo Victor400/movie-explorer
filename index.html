@@ -41,7 +41,7 @@
             <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#dataContainer">Movies</a>
+            <a class="nav-link" href="#data-container">Movies</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#subscribe">Subscribe</a>
@@ -79,11 +79,11 @@
       <h2 class="visually-hidden">Controls</h2> <!-- Use visually-hidden if you don't want it visible -->
       <div class="row g-2 align-items-center">
         <div class="col-md-4">
-          <input type="text" id="searchInput" class="form-control" placeholder="Search for a movie...">
+          <input type="text" id="search-input" class="form-control" placeholder="Search for a movie...">
         </div>
         <!-- Genre Filter Dropdown -->
         <div class="col-md-3">
-          <select id="genreFilter" class="form-select">
+          <select id="genre-filter" class="form-select">
             <option value="all">All Genres</option>
             <option value="action">Action</option>
             <option value="drama">Drama</option>
@@ -93,7 +93,7 @@
         </div>
         <!-- Sort Order Dropdown -->
         <div class="col-md-3">
-          <select id="sortOrder" class="form-select">
+          <select id="sort-order" class="form-select">
             <option value="default">Sort by Year</option>
             <option value="asc">Year ↑ (Oldest)</option>
             <option value="desc">Year ↓ (Newest)</option>
@@ -101,14 +101,14 @@
         </div>
         <!-- Clear Search Button -->
         <div class="col-md-2">
-          <button id="clearBtn" class="btn btn-outline-secondary w-100" disabled>Clear Search</button>
+          <button id="clear-btn" class="btn btn-outline-secondary w-100" disabled>Clear Search</button>
         </div>
       </div>
 
     </section>
 
     <!-- Movies Display Section -->
-    <section id="dataContainer" class="row">
+    <section id="data-container" class="row">
       <!-- Dynamic movie cards will be inserted here by script.js -->
     </section>
 
@@ -129,19 +129,19 @@
       </section>
 
       <!-- Modal -->
-      <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
+      <div class="modal fade" id="newsletter-modal" tabindex="-1" aria-labelledby="newsletter-modal-label"
         aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content bg-dark text-light">
             <div class="modal-header">
-              <h5 class="modal-title" id="newsletterModalLabel">Subscribe to Our Newsletter</h5>
+              <h5 class="modal-title" id="newsletter-modal-label">Subscribe to Our Newsletter</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                 aria-label="Close"></button>
             </div>
             <form>
               <div class="modal-body">
-                <label for="emailInput" class="form-label">Email address:</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required />
+                <label for="email-input" class="form-label">Email address:</label>
+                <input type="email" class="form-control" id="email-input" placeholder="name@example.com" required />
               </div>
               <div class="modal-footer">
                 <button type="submit" class="btn btn-warning">Subscribe</button>
@@ -162,7 +162,7 @@
           <h5 class="text-uppercase fw-bold">Explore</h5>
           <ul class="list-unstyled">
             <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
-            <li><a href="#dataContainer" class="text-light text-decoration-none">Movies</a></li>
+            <li><a href="#data-container" class="text-light text-decoration-none">Movies</a></li>
           </ul>
         </div>
         <div class="col-md-4 mb-4">

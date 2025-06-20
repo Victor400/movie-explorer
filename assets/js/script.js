@@ -2,11 +2,11 @@
 /* jshint esversion: 8 */
 
 // Cache DOM elements for interaction
-const container = document.getElementById("dataContainer");
-const searchInput = document.getElementById("searchInput");
-const genreFilter = document.getElementById("genreFilter");
-const sortOrder = document.getElementById("sortOrder");
-const clearBtn = document.getElementById("clearBtn");
+const container = document.getElementById("data-container");
+const searchInput = document.getElementById("search-input");
+const genreFilter = document.getElementById("genre-filter");
+const sortOrder = document.getElementById("sort-order");
+const clearBtn = document.getElementById("clear-btn");
 
 console.log("DOM elements loaded:", {
     container,
