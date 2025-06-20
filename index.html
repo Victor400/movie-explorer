@@ -123,7 +123,7 @@
           Join our movie club for streaming tips, curated watchlists, and weekly picks straight to your inbox.
         </p>
         <button type="button" class="btn btn-warning btn-lg px-4" data-bs-toggle="modal"
-          data-bs-target="#newsletterModal">
+          data-bs-target="#newsletter-modal">
           Subscribe Now
         </button>
       </section>
@@ -138,15 +138,21 @@
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                 aria-label="Close"></button>
             </div>
-            <form>
+            <form id="subscribe-form" class="needs-validation" novalidate>
               <div class="modal-body">
                 <label for="email-input" class="form-label">Email address:</label>
                 <input type="email" class="form-control" id="email-input" placeholder="name@example.com" required />
+                <div class="invalid-feedback">
+                  Please enter a valid email.
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="submit" class="btn btn-warning">Subscribe</button>
               </div>
             </form>
+
+
+
           </div>
         </div>
       </div>
@@ -208,22 +214,7 @@
 
   </script>
 
-  <script>
-    // Bootstrap form validation
-    (() => {
-      'use strict';
-      const forms = document.querySelectorAll('.needs-validation');
-      Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-          if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    })();
-  </script>
+  <script src="assets/js/form-validation.js"></script>
 
 </body>
 
