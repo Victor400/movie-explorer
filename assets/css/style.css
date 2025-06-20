@@ -12,6 +12,28 @@
   --text-color: #ffffff;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  background-color: #121212;
+  color: #fff;
+}
+
+
 body {
   background-color: var(--background-color);
   color: var(--primary-color);
@@ -115,6 +137,7 @@ p {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* 
 /* Style for the search input */
 #searchInput {
   padding: 0.5rem 1rem;
@@ -123,17 +146,7 @@ p {
   border-radius: 4px;
 }
 
-/* Style for the genre and sort dropdowns */
-#genreFilter,
-#sortOrder {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin: 0.5rem;
-}
 
-/* Style for the clear button */
 #clearBtn {
   padding: 1.2rem 1rem;
   font-size: 1rem;
@@ -143,12 +156,49 @@ p {
   color: #000;
   cursor: pointer;
   margin: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Hover effect for the clear button */
-#clearBtn:hover {
-  background-color: #e2e6ea;
+#clearBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
 }
+
+#clearBtn:not(:disabled):hover {
+  background-color: #333;
+  /* Dark background on hover */
+  color: #fff;
+  /* White text */
+  border-color: #fff;
+  /* White border */
+}
+
+
+#genreFilter,
+#sortOrder,
+#searchInput {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+#genreFilter:hover,
+#genreFilter:focus,
+#sortOrder:hover,
+#sortOrder:focus,
+#searchInput:hover,
+#searchInput:focus {
+  background-color: #333;
+  color: #fff;
+  border-color: #fff;
+  outline: none;
+  box-shadow: 0 0 5px #fff;
+}
+
 
 #dataContainer {
   display: flex;
@@ -207,8 +257,6 @@ p {
   margin-top: 0.25rem;
 }
 
-
-
 .movie-description {
   font-size: 0.85rem;
   color: #adb5bd;
@@ -217,7 +265,6 @@ p {
 
 }
 
-/* Subscribe Section */
 #subscribe {
   min-height: 200px;
   background: #0a0a0a;
@@ -277,7 +324,7 @@ p {
   border: 1px solid #ccc;
 }
 
-/* Footer Info */
+
 footer h5 {
   font-weight: 700;
   margin-bottom: 1rem;

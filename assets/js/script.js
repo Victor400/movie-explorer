@@ -16,6 +16,48 @@ console.log("DOM elements loaded:", {
     clearBtn
 });
 
+
+// Reuse already-declared DOM references at the top
+// Function to check if Clear button should be enabled
+function updateClearButtonState() {
+    const isSearchFilled = searchInput.value.trim() !== '';
+    const isGenreFiltered = genreFilter.value !== 'all';
+    const isSortFiltered = sortOrder.value !== 'default';
+
+    clearBtn.disabled = !(isSearchFilled || isGenreFiltered || isSortFiltered);
+}
+
+// Clear input and reset filters on Clear button click
+clearBtn.addEventListener('click', () => {
+    console.log("Clear button clicked.");
+    searchInput.value = '';
+    genreFilter.value = 'all';
+    sortOrder.value = 'default';
+    updateClearButtonState();  // Re-evaluate state
+    renderMovies(allMovies);
+    searchInput.focus();
+});
+
+// Update clear button state whenever any filter changes
+searchInput.addEventListener("input", () => {
+    console.log("Search input changed:", searchInput.value);
+    updateClearButtonState();
+    filterAndSortMovies(allMovies);
+});
+
+genreFilter.addEventListener("change", () => {
+    console.log("Genre changed:", genreFilter.value);
+    updateClearButtonState();
+    filterAndSortMovies(allMovies);
+});
+
+sortOrder.addEventListener("change", () => {
+    console.log("Sort order changed:", sortOrder.value);
+    updateClearButtonState();
+    filterAndSortMovies(allMovies);
+});
+
+
 // Function to render movie cards
 function renderMovies(data) {
     console.log("Rendering movies:", data);
