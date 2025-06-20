@@ -177,28 +177,31 @@ p {
 
 #genre-filter,
 #sort-order,
-#search-input {
+#search-input,
+#clear-btn {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.95rem;
 }
 
+/* Hover and focus styles */
 #genre-filter:hover,
 #genre-filter:focus,
 #sort-order:hover,
 #sort-order:focus,
 #search-input:hover,
-#search-input:focus {
+#search-input:focus,
+#clear-btn:hover,
+#clear-btn:focus {
   background-color: #333;
   color: #fff;
   border-color: #fff;
   outline: none;
   box-shadow: 0 0 5px #fff;
 }
-
 
 #data-container {
   display: flex;
@@ -440,16 +443,13 @@ footer a:hover i {
   }
 
   #genre-filter,
-  #sort-order {
-    width: 50%;
-    font-size: 0.95rem;
+  #sort-order,
+  #search-input,
+  #clear-btn {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.9rem;
   }
 
-  #clear-btn {
-    font-size: 0.95rem;
-    padding: 0.45rem 0.9rem;
-    width: 14.66% !important;
-  }
 }
 
 
@@ -464,16 +464,22 @@ footer a:hover i {
   }
 
   #genre-filter,
-  #sort-order {
-    width: 95%;
-    font-size: 0.9rem;
+  #sort-order,
+  #search-input,
+  #clear-btn {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
   }
 
-  #clear-btn {
-    width: 96% !important;
-    font-size: 0.9rem;
-    padding: 0.6rem;
 
+  #clear-btn:hover,
+  #clear-btn:focus {
+    background-color: #222;
+    color: #fff;
+    border-color: #ddd;
+    box-shadow: 0 0 4px #ddd;
   }
 
 }
