@@ -1,4 +1,3 @@
-
 /* jshint esversion: 8 */
 
 // Cache DOM elements for interaction
@@ -16,8 +15,6 @@ console.log("DOM elements loaded:", {
     clearBtn
 });
 
-
-// Reuse already-declared DOM references at the top
 // Function to check if Clear button should be enabled
 function updateClearButtonState() {
     const isSearchFilled = searchInput.value.trim() !== '';
@@ -26,37 +23,6 @@ function updateClearButtonState() {
 
     clearBtn.disabled = !(isSearchFilled || isGenreFiltered || isSortFiltered);
 }
-
-// Clear input and reset filters on Clear button click
-clearBtn.addEventListener('click', () => {
-    console.log("Clear button clicked.");
-    searchInput.value = '';
-    genreFilter.value = 'all';
-    sortOrder.value = 'default';
-    updateClearButtonState();  // Re-evaluate state
-    renderMovies(allMovies);
-    searchInput.focus();
-});
-
-// Update clear button state whenever any filter changes
-searchInput.addEventListener("input", () => {
-    console.log("Search input changed:", searchInput.value);
-    updateClearButtonState();
-    filterAndSortMovies(allMovies);
-});
-
-genreFilter.addEventListener("change", () => {
-    console.log("Genre changed:", genreFilter.value);
-    updateClearButtonState();
-    filterAndSortMovies(allMovies);
-});
-
-sortOrder.addEventListener("change", () => {
-    console.log("Sort order changed:", sortOrder.value);
-    updateClearButtonState();
-    filterAndSortMovies(allMovies);
-});
-
 
 // Function to render movie cards
 function renderMovies(data) {
@@ -72,7 +38,7 @@ function renderMovies(data) {
         const col = document.createElement("div");
         col.className = "col-md-3 movie-card";
         col.innerHTML = `
-            <img src="${movie.image}" alt="${movie.title}" class="img-fluid movie-image"width="600" height="400"loading="lazy" />
+            <img src="${movie.image}" alt="${movie.title}" class="img-fluid movie-image" width="600" height="400" loading="lazy" />
             <div class="movie-title">${movie.title}</div>
             <div class="movie-details">${movie.genre.toUpperCase()} | ${movie.year}</div>
             <div class="movie-description">${movie.description || "No description available."}</div>
@@ -121,6 +87,7 @@ async function fetchMoviesData() {
         if (Array.isArray(data)) {
             allMovies = data;
             renderMovies(allMovies);
+            updateClearButtonState();
         } else {
             throw new Error('Invalid movie data format. Expected an array.');
         }
@@ -129,29 +96,37 @@ async function fetchMoviesData() {
     }
 }
 
-// Event listeners
-searchInput.addEventListener("input", () => {
-    console.log("Search input changed:", searchInput.value);
-    filterAndSortMovies(allMovies);
-});
+// Initialize event listeners
+function initializeEventListeners() {
+    searchInput.addEventListener("input", () => {
+        console.log("Search input changed:", searchInput.value);
+        updateClearButtonState();
+        filterAndSortMovies(allMovies);
+    });
 
-genreFilter.addEventListener("change", () => {
-    console.log("Genre changed:", genreFilter.value);
-    filterAndSortMovies(allMovies);
-});
+    genreFilter.addEventListener("change", () => {
+        console.log("Genre changed:", genreFilter.value);
+        updateClearButtonState();
+        filterAndSortMovies(allMovies);
+    });
 
-sortOrder.addEventListener("change", () => {
-    console.log("Sort order changed:", sortOrder.value);
-    filterAndSortMovies(allMovies);
-});
+    sortOrder.addEventListener("change", () => {
+        console.log("Sort order changed:", sortOrder.value);
+        updateClearButtonState();
+        filterAndSortMovies(allMovies);
+    });
 
-clearBtn.addEventListener("click", () => {
-    console.log("Clear button clicked.");
-    searchInput.value = "";
-    genreFilter.value = "all";
-    sortOrder.value = "default";
-    renderMovies(allMovies);
-});
+    clearBtn.addEventListener("click", () => {
+        console.log("Clear button clicked.");
+        searchInput.value = "";
+        genreFilter.value = "all";
+        sortOrder.value = "default";
+        updateClearButtonState();
+        renderMovies(allMovies);
+        searchInput.focus();
+    });
+}
 
-// Initial data fetch
+// Start app
+initializeEventListeners();
 fetchMoviesData();
