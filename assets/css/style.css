@@ -77,6 +77,8 @@ p {
 }
 
 
+
+
 .about-header h2 {
   font-family: var(--secondary-font);
   font-size: 2.5rem;
@@ -181,6 +183,7 @@ p {
 }
 
 .movie-img {
+  aspect-ratio: 2 / 3;
   width: 100%;
   height: auto;
   display: block;
@@ -195,6 +198,7 @@ p {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 0.5rem;
+  min-height: 2.5rem;
 }
 
 .movie-details {
@@ -203,17 +207,19 @@ p {
   margin-top: 0.25rem;
 }
 
+
+
 .movie-description {
   font-size: 0.85rem;
   color: #adb5bd;
-  min-height: 100px;
+  min-height: 2.5rem;
 
 
 }
 
 /* Subscribe Section */
 #subscribe {
-  min-height: 400px;
+  min-height: 200px;
   background: #0a0a0a;
   color: #fff;
 }
@@ -420,6 +426,7 @@ footer a:hover i {
     width: 96% !important;
     font-size: 0.9rem;
     padding: 0.6rem;
+
   }
 
 }
