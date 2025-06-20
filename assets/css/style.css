@@ -12,6 +12,11 @@
   --text-color: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 html,
 body {
   height: 100%;
@@ -26,6 +31,7 @@ body {
 
 main {
   flex: 1;
+  margin-top: 170px;
 }
 
 .footer {
@@ -127,7 +133,7 @@ p {
 /* Container for the controls */
 #controls {
   margin-bottom: 0.5rem !important;
-  margin-top: 4rem;
+  margin-top: 5rem;
   background-color: var(--highlight-color-light);
   width: 85%;
   margin-left: auto;
@@ -480,6 +486,20 @@ footer a:hover i {
     color: #fff;
     border-color: #ddd;
     box-shadow: 0 0 4px #ddd;
+  }
+
+
+  #data-container .row {
+    justify-content: center;
+    /* centers the flex items horizontally */
+  }
+
+  /* Optional: make movie cards a bit narrower for better spacing */
+  #data-container .movie-card {
+    max-width: 90%;
+    /* or a fixed width like 300px */
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }

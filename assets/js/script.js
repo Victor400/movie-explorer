@@ -1,7 +1,8 @@
 /* jshint esversion: 8 */
 
 // Cache DOM elements for interaction
-const container = document.getElementById("data-container");
+const container = document.getElementById("movie-cards-wrapper");
+
 const searchInput = document.getElementById("search-input");
 const genreFilter = document.getElementById("genre-filter");
 const sortOrder = document.getElementById("sort-order");
@@ -15,6 +16,9 @@ console.log("DOM elements loaded:", {
     clearBtn
 });
 
+// Add top margin to container to push content down from navbar
+container.style.marginTop = "15px"; // adjust value as needed
+
 // Function to check if Clear button should be enabled
 function updateClearButtonState() {
     const isSearchFilled = searchInput.value.trim() !== '';
@@ -24,27 +28,35 @@ function updateClearButtonState() {
     clearBtn.disabled = !(isSearchFilled || isGenreFiltered || isSortFiltered);
 }
 
-// Function to render movie cards
+// Function to render movie cards (without heading)
 function renderMovies(data) {
     console.log("Rendering movies:", data);
     container.innerHTML = "";
 
     if (data.length === 0) {
-        container.innerHTML = "<p class='text-center'>No movies found.</p>";
+        const noDataMsg = document.createElement("p");
+        noDataMsg.className = "text-center";
+        noDataMsg.textContent = "No movies found.";
+        container.appendChild(noDataMsg);
         return;
     }
 
+    const row = document.createElement("div");
+    row.className = "row";
+
     data.forEach(movie => {
         const col = document.createElement("div");
-        col.className = "col-md-3 movie-card";
+        col.className = "col-md-3 movie-card mb-4";
         col.innerHTML = `
             <img src="${movie.image}" alt="${movie.title}" class="img-fluid movie-image" width="600" height="400" loading="lazy" />
             <div class="movie-title">${movie.title}</div>
             <div class="movie-details">${movie.genre.toUpperCase()} | ${movie.year}</div>
             <div class="movie-description">${movie.description || "No description available."}</div>
         `;
-        container.appendChild(col);
+        row.appendChild(col);
     });
+
+    container.appendChild(row);
 }
 
 // Function to filter and sort movies
