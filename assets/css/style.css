@@ -133,7 +133,7 @@ p {
 /* Container for the controls */
 #controls {
   margin-bottom: 0.5rem !important;
-  margin-top: 5rem;
+  margin-top: 4rem;
   background-color: var(--highlight-color-light);
   width: 85%;
   margin-left: auto;
@@ -212,7 +212,7 @@ p {
 #data-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0rem;
   justify-content: center;
   padding: 1rem;
 }
@@ -300,6 +300,7 @@ p {
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  margin-top: 58px;
 }
 
 #subscribe .btn-warning:hover {

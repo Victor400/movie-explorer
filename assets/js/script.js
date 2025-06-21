@@ -17,7 +17,7 @@ console.log("DOM elements loaded:", {
 });
 
 // Add top margin to container to push content down from navbar
-container.style.marginTop = "15px"; // adjust value as needed
+container.style.marginTop = "10px"; // adjust value as needed
 
 // Function to check if Clear button should be enabled
 function updateClearButtonState() {
