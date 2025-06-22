@@ -1,6 +1,6 @@
 ![movie-explorer-logo](assets/documentation/images/movie-explorer-logo.jpeg)
 
-# Movie Explorer Website
+## Movie Explorer Website
 Welcome to Movie Explorer, your ultimate destination for discovering and exploring movies. Browse through a curated collection of films across genres like Action, Comedy, Drama, and Kids. Whether you're searching for a classic favorite or the latest hit, Movie Explorer helps you find movies you’ll love—fast and easily. Dive in, search, filter, and enjoy the world of cinema at your fingertips.
 
 
@@ -17,7 +17,8 @@ Table of Contents
 10. [Technologies Used](#technologies-used)
 11. [Project Setup](#project-setup)
 12. [Installation](#installation)
-13. [Acknowledgements](#acknowledgements)
+13. [Deployment](#deployment)
+14. [Acknowledgements](#acknowledgements)
 
 
 
@@ -25,7 +26,7 @@ Table of Contents
 
 The Interactive Movie Explorer is a responsive, user-friendly web application that allows users to browse, search, filter, and interact with a curated list of movies. Designed using HTML, CSS, and JavaScript, the site enables users to quickly find movies by title or genre, sort them by release year, and even subscribe to updates or contact the site owner through embedded forms.
 
-# Project Link
+## Project Link
 
 You can view the live project here: [Movie Explorer](https://victor400.github.io/movie-explorer/)
 
@@ -97,7 +98,7 @@ Movie Explorer addresses this by offering:
 - By solving both data integrity and user experience challenges, Movie Explorer becomes a robust tool and a strong reference for developers building resilient, user-friendly applications.
 
 
-## Testing
+## Testing For Project
 
 This project uses **Jest** for unit testing and **Cypress** for end-to-end testing.  
 All test-related files are organized under the `/tests` directory.
@@ -248,7 +249,7 @@ Submissions without a valid email are blocked with validation.
 
 ### 🧪 Manual Testing Plan
 
-### 🔍 User Story 1: Search Movies by Title
+#### 🔍 User Story 1: Search Movies by Title
 
 | Test Case | Description | Steps | Expected Result | Pass/Fail |
 |-----------|-------------|-------|------------------|-----------|
@@ -259,7 +260,7 @@ Submissions without a valid email are blocked with validation.
 
 ---
 
-### 🎭 User Story 2: Filter Movies by Genre
+#### 🎭 User Story 2: Filter Movies by Genre
 
 | Test Case | Description | Steps | Expected Result | Pass/Fail |
 |-----------|-------------|-------|------------------|-----------|
@@ -269,7 +270,7 @@ Submissions without a valid email are blocked with validation.
 
 ---
 
-### 📅 User Story 3: Sort Movies by Year
+#### 📅 User Story 3: Sort Movies by Year
 
 | Test Case | Description | Steps | Expected Result | Pass/Fail |
 |-----------|-------------|-------|------------------|-----------|
@@ -279,7 +280,7 @@ Submissions without a valid email are blocked with validation.
 
 ---
 
-### 🧹 User Story 4: Clear Filters
+#### 🧹 User Story 4: Clear Filters
 
 | Test Case | Description | Steps | Expected Result | Pass/Fail |
 |-----------|-------------|-------|------------------|-----------|
@@ -288,7 +289,7 @@ Submissions without a valid email are blocked with validation.
 
 ---
 
-### 🧾 User Story 5: View Movie Details as Cards
+#### 🧾 User Story 5: View Movie Details as Cards
 
 | Test Case | Description | Steps | Expected Result | Pass/Fail |
 |-----------|-------------|-------|------------------|-----------|
@@ -298,7 +299,7 @@ Submissions without a valid email are blocked with validation.
 
 ---
 
-### 🧭 User Story 6: Navigate Between Site Sections
+#### 🧭 User Story 6: Navigate Between Site Sections
 
 | Test Case | Description | Steps | Expected Result | Pass/Fail |
 |-----------|-------------|-------|------------------|-----------|
@@ -308,7 +309,7 @@ Submissions without a valid email are blocked with validation.
 
 ---
 
-### 📬 User Story 8: Subscribe to Updates
+#### 📬 User Story 7: Subscribe to Updates
 
 | Test Case | Description | Steps | Expected Result | Pass/Fail |
 |-----------|-------------|-------|------------------|-----------|
@@ -316,7 +317,7 @@ Submissions without a valid email are blocked with validation.
 | 8.2 | Valid Email Submit | Enter valid email & submit | Confirmation shown, input clears | ✅ / ❌ |
 | 8.3 | Invalid Email Validation | Enter “test@”, submit | Error shown, submission blocked | ✅ / ❌ |
 
-# Automated Testing
+### Automated Testing
 
 Automated Test Categories This project includes automated tests that focus on improving the quality and performance of the website. The tests are divided into four main categories:
 
@@ -396,6 +397,31 @@ npm test
 
 ```bash
 npm run test:e2e
+```
+
+## Deployment
+
+To deploy your Movie Explorer project (assuming it's a frontend project with HTML/CSS/JS or React), you can use GitHub Pages or Netlify. Here’s how to do both:
+
+- GitHub Pages (for plain HTML/CSS/JS)
+🔧 For Plain HTML/CSS/JS
+Push your code to a GitHub repo (you already did).
+
+Rename your main HTML file as index.html if it isn't already.
+
+On GitHub:
+
+Go to your repo → Settings → Pages (left sidebar).
+
+Under Branch, select main and folder as /root.
+
+Click Save.
+
+Your site will be live at:
+
+```php template
+https://<your-username>.github.io/<repo-name>
+
 ```
 
 ## Acknowledgements
