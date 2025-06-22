@@ -21,7 +21,6 @@ Table of Contents
 14. [Acknowledgements](#acknowledgements)
 
 
-
 ## Overview
 
 The Interactive Movie Explorer is a responsive, user-friendly web application that allows users to browse, search, filter, and interact with a curated list of movies. Designed using HTML, CSS, and JavaScript, the site enables users to quickly find movies by title or genre, sort them by release year, and even subscribe to updates or contact the site owner through embedded forms.
@@ -30,7 +29,7 @@ The Interactive Movie Explorer is a responsive, user-friendly web application th
 
 You can view the live project here: [Movie Explorer](https://victor400.github.io/movie-explorer/)
 
-![Website Morkup](assets/images/mockup.png)
+![Website Morkup](assets/design//mockup.png)
 
 ## Key Features 
 
@@ -126,6 +125,27 @@ npm run test:e2e   # Launch Cypress test runner
 
 - Call to Action: The “Subscribe ⌄” option is prominent to encourage user engagement.
 
+
+### 🎨 UI/UX Design
+
+The following colour wheel was used during the design process to guide consistent branding and visual style:
+
+![Colour Wheel](./assets/design/colour-wheel.PNG)
+
+#### 🎨 Style Guide
+
+Below are the main colours used in this project:
+
+| Variable                  | Colour Code |
+|---------------------------|-------------|
+| `--primary-color`         | `#BCEC7E`    |
+| `--secondary-color`       | `#EDFFDE`    |
+| `--highlight-color-light` | `#324e0d`    |
+| `--background-color`      | `#121212`    |
+| `--navbar-color`          | `#1a1a1a`    |
+| `--text-color`            | `#ffffff`    |
+
+
 ### User Story 
 ✅ User Story 1: User-Friendly Navigation and Responsive Design
 As a First-Time Visitor,
@@ -158,6 +178,7 @@ The search is case-insensitive.
 
 If no matches are found, a message “No results found.” is displayed.
 
+
 ✅ User Story 3: Filter Movies by Genre
 As a user
 I want to filter movies by genre
@@ -170,6 +191,7 @@ A dropdown shows genre options including: All, Action, Comedy, Drama, Kids.
 When a genre is selected, only movies of that genre are shown.
 
 Selecting "All" shows every movie.
+
 
 ✅ User Story 4: Sort Movies by Year
 As a user
@@ -197,6 +219,7 @@ Clicking the button clears the search input, resets genre filter to “All”, a
 
 The full list of movies is displayed after clearing.
 
+
 ✅ User Story 5: View Movie Details as Cards
 As a user
 I want to view movie titles, genres, and years displayed as cards
@@ -209,6 +232,7 @@ Movies are displayed as visually distinct cards.
 Each card includes the title, genre, and year.
 
 Cards are displayed in a single column and centered.
+
 
 ✅ User Story 6: Navigate Between Site Sections
 As a user
@@ -316,7 +340,21 @@ Submissions without a valid email are blocked with validation.
 | 8.2 | Valid Email Submit | Enter valid email & submit | Confirmation shown, input clears | ✅ / ❌ |
 | 8.3 | Invalid Email Validation | Enter “test@”, submit | Error shown, submission blocked | ✅ / ❌ |
 
-#### Bugs and Fixes
+### Bugs and Fixes
+ 
+- Misaligned Images on 1024px Screen
+- Trailling slash on void elements
+- Section lacks heading, considered using h2-h6
+            
+
+![Bug Screenshot1](./assets/bugs/bug-fix1.PNG)
+![Bug Screenshot2](./assets/bugs/bug-fix2.PNG)
+![Bug Screenshot3](./assets/bugs/bug-fix3.PNG)
+![Bug Screenshot4](./assets/bugs/bug-fix4.PNG)
+![Bug Screenshot5](./assets/bugs/bug-fix5.PNG)
+
+
+✅ Confirmed fix by resizing the screen and observing correct centering behavior.
 
 ### Automated Testing
 
@@ -327,17 +365,21 @@ Automated Test Categories This project includes automated tests that focus on im
 - Best practices tests ensure that the website follows modern web standards for security, code quality, and maintainability. This section showcases adherence to best practices." Image Description: "Results of the best practices test, including code quality scores, security vulnerabilities, and compliance with recommended standards."
 - SEO Tests "SEO (Search Engine Optimization) tests evaluate how well the website is optimized for search engines. This section highlights SEO improvements to increase visibility on search engines." Image Description: "SEO audit report showing key optimizations, such as meta tags, page titles, keyword usage, and mobile-friendliness."
 
+**Desktop**
+**Homepage Validator Testing** 
+![Homepage Desktop ](assets/lighthouse/lighthouse1.PNG)
+
 
 ## Balsamiq Wireframe
 I used Balsamiq Wireframes to design and visualize the layout of the Movie Explorer application across multiple device types. The wireframes helped guide the responsive design for:
 
 - Desktop view 
 
-![Desktop](assets/images/desktop.PNG)
+![Desktop](assets/design/desktop.png)
 
 - Tablet view
 
-![Tablet](assets/images/tablet.PNG)
+![Tablet](assets/design/tablet.png)
 
 Mobile view
 
