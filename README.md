@@ -30,7 +30,7 @@ The Interactive Movie Explorer is a responsive, user-friendly web application th
 
 You can view the live project here: [Movie Explorer](https://victor400.github.io/movie-explorer/)
 
-![Website Morkup](assets/documentation/images/mockup.PNG)
+![Website Morkup](assets/images/mockup.png)
 
 ## Key Features 
 
@@ -111,7 +111,6 @@ npm test           # Run Jest unit tests
 npm run test:watch # Watch mode for Jest
 npm run test:e2e   # Launch Cypress test runner
 ```
-
 
 ## User Experience (UX Design)
 
@@ -317,6 +316,8 @@ Submissions without a valid email are blocked with validation.
 | 8.2 | Valid Email Submit | Enter valid email & submit | Confirmation shown, input clears | ✅ / ❌ |
 | 8.3 | Invalid Email Validation | Enter “test@”, submit | Error shown, submission blocked | ✅ / ❌ |
 
+#### Bugs and Fixes
+
 ### Automated Testing
 
 Automated Test Categories This project includes automated tests that focus on improving the quality and performance of the website. The tests are divided into four main categories:
@@ -332,11 +333,11 @@ I used Balsamiq Wireframes to design and visualize the layout of the Movie Explo
 
 - Desktop view 
 
-![Desktop](assets/documentation/images/desktop.PNG)
+![Desktop](assets/images/desktop.PNG)
 
 - Tablet view
 
-![Tablet](assets/documentation/images/tablet.PNG)
+![Tablet](assets/images/tablet.PNG)
 
 Mobile view
 

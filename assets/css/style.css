@@ -467,9 +467,47 @@ footer a:hover i {
     max-width: 100%;
     height: auto;
   }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #data-container {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .movie-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .about-img img {
+    margin: 0 auto;
+  }
+
+  .about-header {
+    text-align: center;
+  }
+
+  #data-container .row {
+    justify-content: center;
+  }
+
+
+}
 
 
 /* Media query for screens 768px and below */
@@ -554,6 +592,7 @@ footer a:hover i {
     border-color: #ddd;
     box-shadow: 0 0 4px #ddd;
   }
+
 
 
   #data-container .row {
