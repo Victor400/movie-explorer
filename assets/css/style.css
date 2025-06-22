@@ -105,8 +105,6 @@ p {
 }
 
 
-
-
 .about-header h2 {
   font-family: var(--secondary-font);
   font-size: 2.5rem;
@@ -116,8 +114,9 @@ p {
 
 .about-header p {
   font-size: 1.2rem;
-  color: var(--secondary-color);
+  color: #000;
   max-width: 700px;
+
 }
 
 .about-img img {
@@ -130,10 +129,65 @@ p {
 }
 
 
+a.text-light {
+  text-decoration: none;
+}
+
+a.text-light:hover {
+  color: #ddd;
+  /* Optional hover color */
+  text-decoration: none;
+}
+
+/* === About Section Styles === */
+.about {
+  background-color: #f8f9fa;
+  /* light gray background */
+  padding: 60px 0;
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #212529;
+  margin-bottom: 20px;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #212529;
+}
+
+.about-img img {
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive spacing */
+@media (max-width: 767.98px) {
+  .about-header h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-header p {
+    text-align: center;
+  }
+
+  .about-img {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
 /* Container for the controls */
 #controls {
   margin-bottom: 0.5rem !important;
-  margin-top: 4rem;
+  margin-top: 2rem;
   background-color: var(--highlight-color-light);
   width: 85%;
   margin-left: auto;
@@ -358,6 +412,18 @@ footer ul li a:hover {
   color: var(--primary-color);
   text-decoration: underline;
 }
+
+/* Footer Explore Links */
+.footer-explore a {
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-explore a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
 
 /* Social Icons */
 footer a i {
