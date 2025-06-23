@@ -10,34 +10,34 @@
     "title": "Extremely Long Title That Might Break Layout or Overflow the Container in Some UIs",
     "year": 2025,
     "genre": "drama",
-    "image": "assets/documentation/images/long-title.webp",
+    "image": "assets/images/long-title.webp",
     "description": "A test for handling really long titles in the UI."
   },
   {
     "title": "Special & Unicode 😎 Characters",
     "year": 2025,
     "genre": "comedy",
-    "image": "assets/documentation/images/special-chars.webp",
+    "image": "assets/images/special-chars.webp",
     "description": "Testing special characters & emojis in the title."
   },
   {
     "title": "No Year",
     "genre": "mystery",
-    "image": "assets/documentation/images/no-year.webp",
+    "image": "assets/images/no-year.webp",
     "description": "This entry has no year field"
   },
   {
     "title": "Negative Year",
     "year": -500,
     "genre": "history",
-    "image": "assets/documentation/images/negative-year.webp",
+    "image": "assets/images/negative-year.webp",
     "description": "Should the UI or backend allow years like -500?"
   },
   {
     "title": "HTML Injection Test",
     "year": 2024,
     "genre": "sci-fi",
-    "image": "assets/documentation/images/html-injection.webp",
+    "image": "assets/images/html-injection.webp",
     "description": "<script>alert('XSS')</script>"
   },
   {

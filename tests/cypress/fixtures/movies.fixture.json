@@ -3,126 +3,126 @@
     "title": "Ballerina",
     "year": 2025,
     "genre": "action",
-    "image": "assets/documentation/images/ballerina.webp",
+    "image": "assets/images/ballerina.jpg",
     "description": "A young assassin seeks revenge for the murder of her family in the gritty underworld of organized crime."
   },
   {
     "title": "The Avengers",
     "year": 2025,
     "genre": "action",
-    "image": "assets/documentation/images/avengers.webp",
+    "image": "assets/images/avengers.jpg",
     "description": "Earth’s mightiest heroes reunite to face a new global threat that could change the fate of the universe."
   },
   {
     "title": "The Accountant 2",
     "year": 2025,
     "genre": "action",
-    "image": "assets/documentation/images/the-accountant2.webp",
+    "image": "assets/images/the-accountant2.jpg",
     "description": "Christian Wolff returns, unraveling a deadly conspiracy while confronting ghosts from his past."
   },
   {
     "title": "Captain America",
     "year": 2024,
     "genre": "action",
-    "image": "assets/documentation/images/captain-america.webp",
+    "image": "assets/images/captain-america.jpg",
     "description": "A new hero takes up the shield as Captain America to fight injustice in a divided world."
   },
   {
     "title": "Exterritorial",
     "year": 2025,
     "genre": "action",
-    "image": "assets/documentation/images/exterritorial.webp",
+    "image": "assets/images/exterritorial.jpg",
     "description": "A rogue agent must survive international forces as he defends a hidden territory beyond global laws."
   },
   {
     "title": "The Snow White",
     "year": 2025,
     "genre": "kids",
-    "image": "assets/documentation/images/snow-white.webp",
+    "image": "assets/images/snow-white.jpg",
     "description": "A reimagined fairy tale where Snow White finds courage and strength to challenge her wicked stepmother."
   },
   {
     "title": "Lost Lands",
     "year": 2024,
     "genre": "drama",
-    "image": "assets/documentation/images/lost-lands.webp",
+    "image": "assets/images/lost-lands.jpg",
     "description": "A queen journeys across mysterious lands to recover ancient magic and reclaim her destiny."
   },
   {
     "title": "Minecraft",
     "year": 2024,
     "genre": "kids",
-    "image": "assets/documentation/images/minecraft.webp",
+    "image": "assets/images/minecraft.jpg",
     "description": "In a blocky world of creativity, a group of unlikely heroes must stop the Ender Dragon from destroying everything."
   },
   {
     "title": "The Havoc",
     "year": 2024,
     "genre": "action",
-    "image": "assets/documentation/images/havoc.webp",
+    "image": "assets/images/havoc.jpg",
     "description": "A bruised detective navigates a criminal underworld to rescue a politician's son after a drug deal goes wrong."
   },
   {
-    "title": "The Legend",
+    "title": "The Tin Soldier",
     "year": 2024,
     "genre": "kids",
-    "image": "assets/documentation/images/legend.webp",
+    "image": "assets/images/tin-soldier.jpg",
     "description": "A washed-up martial artist attempts a comeback, becoming an unlikely internet sensation."
   },
   {
     "title": "Rust",
     "year": 2024,
     "genre": "drama",
-    "image": "assets/documentation/images/rust.webp",
+    "image": "assets/images/rust.jpg",
     "description": "A man confronts his past and seeks redemption in a quiet Western town haunted by tragedy."
   },
   {
     "title": "The Lilo Stitch",
     "year": 2024,
     "genre": "kids",
-    "image": "assets/documentation/images/lilo-stitch.webp",
+    "image": "assets/images/lilo-stitch.jpg",
     "description": "Lilo and her alien friend Stitch embark on a new adventure about family, love, and belonging."
   },
   {
     "title": "Thunderbolts",
     "year": 2024,
     "genre": "action",
-    "image": "assets/documentation/images/thunderbolts.webp",
+    "image": "assets/images/thunderbolts.jpg",
     "description": "A team of anti-heroes is brought together by the government for secret missions too dirty for the Avengers."
   },
   {
     "title": "Sikandar",
     "year": 2025,
     "genre": "drama",
-    "image": "assets/documentation/images/sikandar.webp",
+    "image": "assets/images/sikandar.jpg",
     "description": "Set against political upheaval, a young man rises from hardship to become a revolutionary leader."
   },
   {
     "title": "The Jewel Thief",
     "year": 2024,
-    "genre": "action",
-    "image": "assets/documentation/images/jewel-thief.webp",
+    "genre": "drama",
+    "image": "assets/images/Jewel-thief.jpg",
     "description": "A master thief plans one last heist—stealing a priceless gem from a high-security fortress."
   },
   {
     "title": "Last Bullet",
     "year": 2024,
     "genre": "action",
-    "image": "assets/documentation/images/last-bullet.webp",
+    "image": "assets/images/last-bullet.jpg",
     "description": "A betrayed soldier takes justice into his own hands in a relentless quest for vengeance."
   },
   {
     "title": "Fountain Of Youth",
     "year": 2024,
     "genre": "kids",
-    "image": "assets/documentation/images/fountain.webp",
+    "image": "assets/images/fountain.jpg",
     "description": "Two curious siblings discover a magical spring that grants youth—and must protect it from greedy villains."
   },
   {
     "title": "Shadow Force",
     "year": 2025,
     "genre": "action",
-    "image": "assets/documentation/images/shadow-force.webp",
+    "image": "assets/images/shadow-force.jpg",
     "description": "A covert black-ops team goes rogue to protect a family caught in a global conspiracy."
   }
 ]
