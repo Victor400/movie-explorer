@@ -1,4 +1,4 @@
-![movie-explorer-logo](assets/documentation/images/movie-explorer-logo.jpeg)
+![movie-explorer-logo](assets/images/movie-explorer-logo.jpeg)
 
 ## Movie Explorer Website
 Welcome to Movie Explorer, your ultimate destination for discovering and exploring movies. Browse through a curated collection of films across genres like Action, Comedy, Drama, and Kids. Whether you're searching for a classic favorite or the latest hit, Movie Explorer helps you find movies you’ll love—fast and easily. Dive in, search, filter, and enjoy the world of cinema at your fingertips.
@@ -29,7 +29,7 @@ The Interactive Movie Explorer is a responsive, user-friendly web application th
 
 You can view the live project here: [Movie Explorer](https://victor400.github.io/movie-explorer/)
 
-![Website Morkup](assets/design//mockup.png)
+![Website Morkup](./design//mockup.png)
 
 ## Key Features 
 
@@ -130,7 +130,7 @@ npm run test:e2e   # Launch Cypress test runner
 
 The following colour wheel was used during the design process to guide consistent branding and visual style:
 
-![Colour Wheel](./assets/design/colour-wheel.PNG)
+![Colour Wheel](./design/colour-wheel.PNG)
 
 #### 🎨 Style Guide
 
@@ -346,12 +346,11 @@ Submissions without a valid email are blocked with validation.
 - Trailling slash on void elements
 - Section lacks heading, considered using h2-h6
             
-
-![Bug Screenshot1](./assets/bugs/bug-fix1.PNG)
-![Bug Screenshot2](./assets/bugs/bug-fix2.PNG)
-![Bug Screenshot3](./assets/bugs/bug-fix3.PNG)
-![Bug Screenshot4](./assets/bugs/bug-fix4.PNG)
-![Bug Screenshot5](./assets/bugs/bug-fix5.PNG)
+![Bug Screenshot1](./bugs/bug-fix1.PNG)
+![Bug Screenshot2](./bugs/bug-fix2.PNG)
+![Bug Screenshot3](./bugs/bug-fix3.PNG)
+![Bug Screenshot4](./bugs/bug-fix4.PNG)
+![Bug Screenshot5](./bugs/bug-fix5.PNG)
 
 
 ✅ Confirmed fix by resizing the screen and observing correct centering behavior.
@@ -367,7 +366,11 @@ Automated Test Categories This project includes automated tests that focus on im
 
 **Desktop**
 **Homepage Validator Testing** 
-![Homepage Desktop ](assets/lighthouse/lighthouse1.PNG)
+- ![Homepage Desktop ](./lighthouse/lighthouse1.PNG)
+
+**Tablet**
+**Homepage Validator Testing** 
+- ![Homepage Tablet ](./lighthouse/lighthouse2.PNG)
 
 
 ## Balsamiq Wireframe
@@ -375,11 +378,11 @@ I used Balsamiq Wireframes to design and visualize the layout of the Movie Explo
 
 - Desktop view 
 
-![Desktop](assets/design/desktop.png)
+![Desktop](./design/desktop.png)
 
 - Tablet view
 
-![Tablet](assets/design/tablet.png)
+![Tablet](./design/tablet.png)
 
 Mobile view
 
