@@ -184,6 +184,7 @@
           </a>
         </div>
       </div>
+      <button onclick="fetchMovieDetails(0)" class="btn btn-danger my-3">Trigger Error(Test)</button>
 
       <!-- Copyright -->
       <div class="row mt-4">
@@ -198,11 +199,36 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
 
+  <!-- Error Modal -->
+  <div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="resultsModalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resultsModalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="results-content">
+          <!-- Status will appear here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Custom JavaScript -->
 
   <script src="assets/js/jshint-status.js"></script>
   <script src="assets/js/form-validation.js"></script>
   <script src="assets/js/movie-explorer.js"></script>
+  <script>
+    // Redirect to home page if user tries to access unknown pages
+    window.addEventListener("error", function (e) {
+      if (e.target.tagName === "SCRIPT" && e.target.src.includes("404")) {
+        window.location.href = "index.html";
+      }
+    }, true);
+  </script>
+
 </body>
 
 </html>

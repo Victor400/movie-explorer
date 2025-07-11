@@ -142,3 +142,38 @@ function initializeEventListeners() {
 // Start app
 initializeEventListeners();
 fetchMoviesData();
+
+
+function fetchMovieDetails(movieId) {
+    const apiKey = '33b622cbbbfa28f005a8f15355c5e5a9';
+    const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}`;
+
+    fetch(url)
+        .then(res => {
+            if (!res.ok) {
+                // Use modal if 404 or error
+                if (res.status === 404) {
+                    showErrorModal("Movie not found.");
+                } else {
+                    showErrorModal("Something went wrong. Try again later.");
+                }
+                throw new Error(`HTTP error! status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(data => {
+            // Render movie data
+            renderMovie(data);
+        })
+        .catch(err => {
+            console.error(err);
+        });
+}
+
+// Modal logic
+function showErrorModal(message) {
+    document.getElementById('resultsModalTitle').textContent = "Error";
+    document.getElementById('results-content').textContent = message;
+    const modal = new bootstrap.Modal(document.getElementById('resultsModal'));
+    modal.show();
+}
